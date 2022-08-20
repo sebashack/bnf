@@ -21,7 +21,7 @@ pub enum ParseTreeNode<'gram> {
 pub struct ParseTree<'gram> {
     /// the "left hand side" `Term` used for this `ParseTree`
     pub lhs: &'gram Term,
-    rhs: Vec<ParseTreeNode<'gram>>,
+    pub rhs: Vec<ParseTreeNode<'gram>>,
 }
 
 impl<'gram> ParseTree<'gram> {
